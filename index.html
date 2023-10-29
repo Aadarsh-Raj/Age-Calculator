@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index-style.css" />
+    <script src="index-script.js"></script>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container1">
+        <div class="heading-box">Age Calculator</div>
+        <div class="content-box">
+          <div class="calculator-box">
+            <div class="input-box">
+              <form action="">
+                <input type="date" class="date-input" id="birthdate" />
+                <div class="hover-on-date">
+                  Enter your date of birth!
+                </div>
+                <input type="reset" class="reset-button" />
+              </form>
+            </div>
+            <div class="button-box">
+              <button class="btn" onclick="calculateAge()">Check</button>
+            </div>
+          </div>
+          <div class="output-box">Your age is <span id="output">0</span>.</div>
+        </div>
+      </div>
+      <div class="container2">
+        <img
+          src="https://freesvg.org/img/1536261375.png"
+          class="age-images" id="teen"
+          alt=""
+        />
+        <img
+          src="https://ouch-cdn2.icons8.com/4tB3XOSPkteNMdPjpSBAhJb7qe5rA65ZROHQ1sGjiiQ/rs:fit:374:456/extend:false/wm:1:re:0:0:0.8/wmid:ouch/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMjE5/L2VhNzU2OTM4LWZh/NDQtNDg0Yi04OTAz/LWYwM2Y1NmRhNTkz/Yy5wbmc.png"
+          class="age-images" id="adult"
+        />
+        <img
+          src="https://www.talktoangel.com/images/newsletter/TTA-5IYLYLP2/Coping%20Layoff%20of%20your%20spouse_%20_Inner.svg"
+          class="age-images" id="old"
+          alt=""
+        />
+      </div>
+    </main>
+  </body>
+</html>

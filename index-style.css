@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+body{
+    background-color: #d9aaf6;
+    background: linear-gradient(to right, #ca7ff8, #d9aaf6, #e1c2f4);
+   
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* flex-direction: column; */
+}
+.container1{
+    display: flex;
+    padding: 0.2rem 1.5rem;
+    flex-direction: column;
+}
+
+.heading-box{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #feff76;
+    margin-bottom: 1rem;
+}
+.content-box{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.calculator-box{
+    width: 100%;
+    position: relative;
+}
+.input-box{
+    margin-bottom: 0.6rem;
+}
+.input-box input{
+    padding: .3rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+.input-box .date-input{
+    width: 80%;
+   
+}
+.hover-on-date{
+    background-color: rgb(225, 207, 207);
+    width: max-content;
+    padding:0.2rem 1rem 0.2rem 0.2rem;
+    border-radius: 0.2rem;
+    position: absolute;
+    top: 0.1rem;
+    z-index: 1;
+    left: -12rem;
+    color: #ca7ff8;
+    display: none;
+    
+}
+.input-box .date-input:hover + .hover-on-date{
+    display: block;
+}
+.input-box .reset-button{
+    background-color: rgb(229, 48, 48);
+    color: whitesmoke;
+    font-weight: bold;
+}
+.button-box{
+    display: flex;
+    justify-content: center;
+
+}
+.button-box .btn{
+    background-color:#feff76;
+    padding: 0.5rem 1rem;
+    font-weight: bolder;
+    color: #ca7ff8;
+    border-radius: 0.3rem;
+    border-color: #d9aaf6;
+    cursor: pointer;
+}
+.output-box{
+    padding: 0.5rem 0;
+    text-align: center;
+    width: 100%;
+    color: brown;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+
+.container2 img{
+    width: 150px;
+    height: 150px;
+    display: none;
+}
+
+
