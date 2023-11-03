@@ -1,6 +1,6 @@
 let newYear = document.getElementById("years");
-let newMonth = document.getElementById("months");
-let newDay = document.getElementById("days");
+  let newMonth = document.getElementById("months");
+  let newDay = document.getElementById("days");
 function calculateAge() {
     const birthdate = new Date(document.getElementById("birthdate").value);
     const currentDate = new Date();
@@ -11,13 +11,16 @@ function calculateAge() {
     let years = currentDate.getFullYear() - birthdate.getFullYear();
     let months = currentDate.getMonth() - birthdate.getMonth();
     let days = currentDate.getDate() - birthdate.getDate();
-  
+    console.log("first day", days);
+    console.log("first months", months);
+  console.log("first year", years);
     if (months < 0 || (months === 0 && days < 0)) {
       years--;
     }
   
     if (months < 0) {
       months += 12;
+      
     }
   
     if (days < 0) {
@@ -29,9 +32,12 @@ function calculateAge() {
       days += lastDayOfMonth;
       months--;
     }
+    if(months === -1){
+      months = 11;
+    }
 
   // const age = `${years} years, ${months} months, and ${days} days`;
-
+  
 
   newYear.innerText = years;
   newMonth.innerText = months;
