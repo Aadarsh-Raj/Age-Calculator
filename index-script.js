@@ -1,3 +1,6 @@
+let newYear = document.getElementById("years");
+let newMonth = document.getElementById("months");
+let newDay = document.getElementById("days");
 function calculateAge() {
     const birthdate = new Date(document.getElementById("birthdate").value);
     const currentDate = new Date();
@@ -29,9 +32,7 @@ function calculateAge() {
 
   // const age = `${years} years, ${months} months, and ${days} days`;
 
-  const newYear = document.getElementById("years");
-  const newMonth = document.getElementById("months");
-  const newDay = document.getElementById("days");
+
   newYear.innerText = years;
   newMonth.innerText = months;
   newDay.innerText = days;
@@ -49,6 +50,10 @@ function calculateAge() {
     document.getElementById("teen").style.display = "none";
   }
 }
-// const reset = document.getElementById("reset-button");
-// console.log(reset);
+const reset = document.getElementById("reset-button");
 
+reset.addEventListener("click", ()=>{
+ newYear.innerText = 0;
+ newMonth.innerText = 0;
+ newDay.innerText = 0;
+});
