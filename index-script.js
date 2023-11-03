@@ -1,7 +1,7 @@
 function calculateAge() {
     const birthdate = new Date(document.getElementById("birthdate").value);
     const currentDate = new Date();
-    if (birthdate > currentDate) {
+    if (birthdate > currentDate || birthdate == "Invalid Date") {
       alert("Please enter a valid Date of Birth");
   return;
     }
